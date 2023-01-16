@@ -15,10 +15,16 @@ body {
   line-height: 1.5;
   height: 100vh;
   position: relative;
-  display: flex;
+
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background-image: url('bg.jpg');
+  image-rendering: '-webkit-optimize-contrast';
+  image-rendering: pixelated; /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .show-modal {
@@ -44,7 +50,7 @@ body {
   background: none;
 }
 
-h1 {
+h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
@@ -73,6 +79,10 @@ p {
   z-index: 10;
 }
 
+.img-cl {
+  width: 150px;
+  height: 100px;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -82,4 +92,12 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+header {
+  text-align: center;
+  color: bisque;
+}
+h1 {
+  font-style: normal;
+  font-size: 100px;
 }
