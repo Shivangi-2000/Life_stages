@@ -18,7 +18,7 @@ body {
 
   align-items: flex-start;
   justify-content: center;
-  background-image: url('bg.jpg');
+  background-image: url('img/bg.jpg');
   image-rendering: '-webkit-optimize-contrast';
   image-rendering: pixelated; /* Center and scale the image nicely */
   background-position: center;
